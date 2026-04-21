@@ -7,7 +7,7 @@ description: Update a PrestaShop store by using the Module Update Assistant. Use
 
 ## Requirements
 
-Find out what is the path to the module `autoupgrade`:
+Find out what is the path to the module `autoupgrade`. It may be in a Docker container or behind a SSH session.
 * The commands are run with `[module_path]/bin/console`,
 * Commands details are provided by adding `--help` at the end.
 
@@ -15,6 +15,7 @@ Find out what is the path to the module `autoupgrade`:
 
 - Check the new available versions with `update:check-new-versions`, and ask the user to select which one he wants to use (GATE).
 - Check the compatibility of the store with `update:check-requirements`.
+- Check the posts related to the current version of Update Assistant on https://github.com/PrestaShop/autoupgrade/discussions/categories/known-issues?discussions_q=is%3Aopen+category%3A%22Known+issues%22+label%3A%22Impacts%3A+[version]%22 by replacing [version] with the current major.minor version of the module. It can be found by running `[module_path]/bin/console` without any parameter.
 - If there are errors, investigate and request confirmation to fix them (automatically if there is a way to do so, wait for the user to suggest a fix, wait for the user to fix it himself) and run the command again (GATE).
 - When there are no more errors (warnings are acceptable), ask the user if he want to proceed with the update (GATE).
 - Backup the store with `backup:create`. This is a long process depending on the size of the store.

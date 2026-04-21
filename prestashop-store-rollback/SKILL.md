@@ -5,7 +5,7 @@ description: Restore a PrestaShop store to a previous backup. Use when the user 
 
 ## Requirements
 
-Find out what is the path to the module `autoupgrade`:
+Find out what is the path to the module `autoupgrade`. It may be in a Docker container or behind a SSH session.
 * The commands are run with `[module_path]/bin/console`,
 * Commands details are provided by adding `--help` at the end.
 
