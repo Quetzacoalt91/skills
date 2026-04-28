@@ -13,6 +13,7 @@ Ask the user:
 
 * The commands of Update Assistant are run with `[module_path]/bin/console`,
 * Commands details are provided by adding `--help` at the end.
+* The param `-q` avoids unecessary contents to be displayed. If you need to access the logs after a backup, an update or a restore, you can find them in `[admin_path]/autoupgrade/logs/` with files in the format `[year]-[month]-[day]-[time]-[action].txt`.
 
 ## Steps
 
