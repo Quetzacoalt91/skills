@@ -147,7 +147,7 @@ If the ticket is about mobile, declare `viewport: 'mobile'` in the scenario, so 
 
 Then derive `surfaces`, the pages this PR touches on both sides of the shop, and propose the list before writing it into the scenario. On a back-office PR this is what catches the breakage the ticket never thought to mention. See [references/runner.md](references/runner.md).
 
-Then widen it with non-regression tests. The ticket's steps say what the reporter noticed, not what the change can break, so run [references/coverage.md](references/coverage.md) over the scenario and add what applies to the diff. Name the sections you added in the report.
+Then widen it with non-regression tests and edge cases. The ticket's steps say what the reporter noticed, not what the change can break, so run [references/coverage.md](references/coverage.md) over the scenario and add what applies to the diff. Name the sections you added in the report.
 
 Then check every bug assertion against the tokens the diff adds. The recipe is in [references/runner.md](references/runner.md). A bug assertion naming a class, id or attribute the PR introduces proves nothing: on the code from before the fix that selector is simply absent, the check fails, and the run claims a reproduction it never made. Rewrite it in the words of the ticket.
 
