@@ -42,6 +42,7 @@ Some checks may be missing. Append to this file when a new miss is found.
 - row actions: edit, delete, toggle status
 - bulk actions on a selection, and on none
 - delete leaves no orphan rows behind
+- for each draggable element, attempt drag and drops 
 
 ## Clients that are not a browser
 
